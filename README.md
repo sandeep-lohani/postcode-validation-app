@@ -20,8 +20,9 @@ None
 	+ or Click on any of the notes in notes list to modify or delete notes 
 	+ Result - The notes data is displayed in list format etc.
 
-#To do
-	+ UI can be further enhanced to do more validation and proper error response
-	+ More exception handling can be put in place
+#Further Read
+	+ ANALYSIS.md covers the following
+		+ How the regular expression provided doesn't deal with all UK postcode edge cases
+		+ Performance improvement analysis and the impact of these changes
 
 
