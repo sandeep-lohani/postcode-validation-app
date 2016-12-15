@@ -15,6 +15,7 @@ None
 
 ##How to Run
 	+ Hit URL on browser - http://localhost:8080/local/ 
+	+ private static final String SOURCE_FILE = "C:/import_data.csv";
 	+ Input - Enter note id or leave blank in the search input box provided 
 	+ or Hit create new note and enter note in the main area to create notes
 	+ or Click on any of the notes in notes list to modify or delete notes 
