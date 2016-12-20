@@ -11,15 +11,14 @@ This is a Technical Task to cover the following : -
 	+ Junit tests are available to run each part in the task
 	
 #Dependencies
-None
+junit version 4.11
 
 ##How to Run
-	+ Hit URL on browser - http://localhost:8080/local/ 
-	+ private static final String SOURCE_FILE = "C:/import_data.csv";
-	+ Input - Enter note id or leave blank in the search input box provided 
-	+ or Hit create new note and enter note in the main area to create notes
-	+ or Click on any of the notes in notes list to modify or delete notes 
-	+ Result - The notes data is displayed in list format etc.
+	+ Make sure a csv source file with row_ids and postcodes available under C:/import_data.csv
+	+ Run Junit tests in class PostCodeValidatorTest.java for Part 1
+	+ Run Junit tests in class BulkImportTest.java for Part 2 & 3
+	+ private static final String SOURCE_FILE = "C:/import_data.csv" 
+	+ Result - Junits will be success or fail and files will be generated with invalid/valid postcodes under C drive.
 
 #Further Read
 	+ ANALYSIS.md covers the following
