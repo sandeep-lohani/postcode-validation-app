@@ -74,13 +74,24 @@ public class PostCodeValidatorTest {
 	//which are not covered by the regular expression
 
 	@Test
-	public void testEdgeCases() {
+	public void testValidEdgeCases() {
 		String[] validPostCode = { "BBND 1ZZ", "BIQQ 1ZZ", "FIQQ 1ZZ", "AI-2640", "ZZ99 3AA" };
 		boolean matched = false;
 		for (String zip : validPostCode) {
 			matched = PostCodeValidator.validatePostCode(zip);
 			LOGGER.info("Postcode " + zip + " matched " + matched);
-			assertTrue(matched); //This will fail
+			assertTrue(matched); //This will fail and regex needs change for this or method to be modified to cater these exceptional cases
+		}
+	}
+	
+	@Test
+	public void testInvalidEdgeCases() {
+		String[] validPostCode = { "BBN1ZZ", "BIQQ 1Z1", "F1QQ 1ZT", "AI 2640", "ZY99 311" };
+		boolean matched = false;
+		for (String zip : validPostCode) {
+			matched = PostCodeValidator.validatePostCode(zip);
+			LOGGER.info("Postcode " + zip + " matched " + matched);
+			assertFalse(matched);
 		}
 	}
 
