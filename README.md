@@ -16,7 +16,8 @@ junit version 4.11
 ##How to Run
 	+ Make sure a csv source file with row_ids and postcodes available under C:/import_data.csv
 	+ Run Junit tests in class PostCodeValidatorTest.java for Part 1
-	+ Run Junit tests in class BulkImportTest.java for Part 2 & 3
+	+ Run Junit tests in class BulkImportInitialTestPartTwo.java for Part 2
+	+ Run Junit tests in classes BulkImportInitialTestPartThree.java &  BulkImportEnhancedTest.java for Part 3
 	+ private static final String SOURCE_FILE = "C:/import_data.csv" 
 	+ Result - Junits will be success or fail and files will be generated with invalid/valid postcodes under C drive.
 
