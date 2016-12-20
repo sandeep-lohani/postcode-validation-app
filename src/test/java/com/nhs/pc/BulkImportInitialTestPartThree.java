@@ -23,8 +23,8 @@ public class BulkImportInitialTestPartThree {
 	public final ExpectedException exception = ExpectedException.none();
 	
 	private static final String SOURCE_FILE = "C:/import_data.csv";
-	private String FAILED_VALIDATION_FILE = "C:/failed_validation.csv";
-	private String SUCCESS_VALIDATION_FILE = "C:/succeeded_validation.csv";
+	private static final String FAILED_VALIDATION_FILE = "C:/failed_validation.csv";
+	private static final String SUCCESS_VALIDATION_FILE = "C:/succeeded_validation.csv";
 
 	//Mock
 	private BulkImportInitial bulkImport = new BulkImportInitial();
